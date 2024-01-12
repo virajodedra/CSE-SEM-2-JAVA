@@ -6,8 +6,9 @@ public class Palindrom {
 
             System.out.print("Enter Input : ");
             Scanner sc = new Scanner(System.in);
+            int a1 = 121;
 
-            String a = sc.next();
+            String a = sc.next(); // = "121"
             int start=0;
             int end=a.length()-1;
             int c=0;
