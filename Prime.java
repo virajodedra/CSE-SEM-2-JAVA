@@ -7,16 +7,18 @@ public class Prime {
         
         int a =sc.nextInt();
         int n=0;
-        
-        for(int i=2;i<a;i++){
+
+         boolean prime = true;
+        for(int i=2;i<=a/2;i++){
 
             if(a%i==0){
-                n++;
+                prime = false;
+                break;
             }
 
         }
     
-        if(n==0){
+        if(prime){
             System.out.println("The number is Prime.");
         }
 
