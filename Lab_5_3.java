@@ -2,17 +2,19 @@ import java.security.PublicKey;
 import java.util.*;
 
     class Vowel{
-
-        int a;
-        int e;
-        int i;
-        int o;
-        int u;
-  
+     
+            int e=0;
+            int a=0;
+            int i=0;
+            int o=0;
+            int u=0;
+            int x=0;
+      
         String str;
 
         Vowel(String str){
             this.str = str;
+        
 
 
         }
@@ -21,27 +23,27 @@ import java.util.*;
              this.str = str;
 
               for(int x=0;x<str.length();x++){
-             if(str.charAt(i) == 'a' || str.charAt(i)=='A'){
+             if(str.charAt(x) == 'a' || str.charAt(x)=='A'){
              
                     a++;
 
              }
-             else if(str.charAt(i) == 'e' || str.charAt(i)=='E'){
+             else if(str.charAt(x) == 'e' || str.charAt(x)=='E'){
              
                 e++;
 
              }
-             else if(str.charAt(i) == 'i' || str.charAt(i)=='I'){
+             else if(str.charAt(x) == 'i' || str.charAt(x)=='I'){
              
                 i++;
 
              }
-             else if(str.charAt(i) == 'o' || str.charAt(i)=='O'){
+             else if(str.charAt(x) == 'o' || str.charAt(x)=='O'){
              
                 o++;
 
              }
-             else if(str.charAt(i) == 'u' || str.charAt(i)=='U'){
+             else if(str.charAt(x) == 'u' || str.charAt(x)=='U'){
              
                 u++;
 
@@ -89,13 +91,7 @@ public class Lab_5_3 {
                 
             }
 
-        
 
         }
-
-
-
-        
+ 
     }
-    
-
