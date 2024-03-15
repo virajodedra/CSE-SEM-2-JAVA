@@ -15,6 +15,8 @@ import java.util.*;
        System.out.println("Enter the no of subjects registered :");
        no_of_subjects_registered = sc.nextInt();
        subject_code = new int[no_of_subjects_registered];
+       subject_credit =  new int[no_of_subjects_registered];
+       grad_obtained = new int[no_of_subjects_registered];
 
           for(int i=0; i<no_of_subjects_registered;i++) {
 
