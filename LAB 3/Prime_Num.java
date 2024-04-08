@@ -16,8 +16,14 @@ public class Prime_Num {
                 break;
             }
         }
-        if(flag) System.out.println(n+" is a Prime number");
-        else  System.out.println(n+" is not a Prime Number");
+        if(flag==true){
+            
+             System.out.println(n+" is a Prime number");
+        }
+        else {
+            
+            System.out.println(n+" is not a Prime Number");
+        }
         sc.close();
     }
 }
