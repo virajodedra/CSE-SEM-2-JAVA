@@ -1,8 +1,8 @@
 abstract class Vegetable{
     String color;
-    Vegetable(String color){
-        this.color = color;
     
+public Vegetable(String color){
+        this.color = color;  
     }
 
     abstract public String toString();
