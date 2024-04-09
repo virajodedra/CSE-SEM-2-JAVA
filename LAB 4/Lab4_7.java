@@ -1,4 +1,4 @@
-import java.util.Scanner;
+import java.util.*;
 public class Lab4_7 {
 
     public static void main(String[] args) {
@@ -7,8 +7,7 @@ public class Lab4_7 {
         String str = sc.nextLine();
         String str2 = "";
         for(int i = 0 ; i < str.length() ; i++){
-            //with the help of the substring method
-            // System.out.println(str.substring(0, i+1));
+            
             str2 += str.charAt(i);
             System.out.println(str2);
         }
