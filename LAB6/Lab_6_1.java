@@ -27,9 +27,7 @@ import java.util.*;
               subject_credit[i] = sc.nextInt();
               
               System.out.println("Enter the grad obtained "+(i+1)+" :");
-              grad_obtained[i] = sc.nextInt();
-              
-               
+              grad_obtained[i] = sc.nextInt();          
 
           }
 
@@ -56,8 +54,6 @@ import java.util.*;
 
  }
 
-       
-
 public class Lab_6_1 {
     
     public static void main(String[] args) {
@@ -71,8 +67,6 @@ public class Lab_6_1 {
             s1[j] = new Student();
             s1[j].calculate_spi();
             s1[j].printSpi(s1[j].calculate_spi());
-
-
         
         }
     
