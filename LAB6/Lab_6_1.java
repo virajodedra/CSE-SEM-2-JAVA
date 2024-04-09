@@ -5,7 +5,7 @@ import java.util.*;
     int no_of_subjects_registered;
     int[] subject_code;
     int[] subject_credit;
-    char[] grad_obtained;
+    int[] grad_obtained;
     double spi;
 
     public Student() {
@@ -14,33 +14,41 @@ import java.util.*;
        id_no = sc.nextInt();
        System.out.println("Enter the no of subjects registered :");
        no_of_subjects_registered = sc.nextInt();
+
        subject_code = new int[no_of_subjects_registered];
-       subject_credit =  new int[no_of_subjects_registered];
+       subject_credit = new int[no_of_subjects_registered];
        grad_obtained = new int[no_of_subjects_registered];
 
           for(int i=0; i<no_of_subjects_registered;i++) {
 
-              System.out.println("Enter the subject code :");
+              System.out.println("Enter the subject code  "+(i+1)+" :");
               subject_code[i] = sc.nextInt();
-              System.out.println("Enter the subject credit :");
+              System.out.println("Enter the subject credit  "+(i+1)+"  :");
               subject_credit[i] = sc.nextInt();
-              System.out.println("Enter the grad obtained :");
-              grad_obtained[i] = sc.next().charAt(0);
-
+              
+              System.out.println("Enter the grad obtained "+(i+1)+" :");
+              grad_obtained[i] = sc.nextInt();
+              
+               
 
           }
 
     }
 
-          public int calculate_spi(){
-            //logic for calculating
-            // it return nothin because the return type is void
-            
+    public double calculate_spi() {
+        double totalCredits = 0;
+        double weightedSum = 0;
 
-            return 0;
-          }
+        for (int i = 0; i < no_of_subjects_registered; i++) {
+            totalCredits += subject_credit[i];
+            weightedSum += subject_credit[i] * grad_obtained[i];
+        }
 
-        public void  print_spi(double spi){
+        spi = weightedSum / totalCredits;
+        return spi;
+    }
+
+        public void  printSpi(double spi){
 
 
             System.out.println("SPI  is :"  +spi);
@@ -59,12 +67,15 @@ public class Lab_6_1 {
         Student[] s1 = new Student[n];
 
         for(int j=0; j<n;j++) {
+            
             s1[j] = new Student();
-            s1.print_spi(spi);
+            s1[j].calculate_spi();
+            s1[j].printSpi(s1[j].calculate_spi());
 
 
         
-    }
+        }
     
-}
+    }
+
 }
