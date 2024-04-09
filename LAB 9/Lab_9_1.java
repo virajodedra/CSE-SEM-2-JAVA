@@ -34,11 +34,6 @@ class MyThread2 extends Thread{
    }
 }
 
-
-
-
-
-
 public class Lab_9_1{
     public static void main(String[] args) {
         MyThread myt1 = new MyThread();
