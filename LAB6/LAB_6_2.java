@@ -20,8 +20,7 @@ class book{
 
                 System.out.println("the name of Author is :"+author);
                 System.out.println("The title name is :"+title);
-
-
+                
             }
         }
 
@@ -50,7 +49,6 @@ public class LAB_6_2 {
         System.out.println("Enter  the title : ");
         String title = sc.nextLine();
 
-        
         book b1 = new book(author,title);
 
         System.out.println("Write book  for book publication  or write paper  for paper  publication..");
@@ -71,8 +69,6 @@ public class LAB_6_2 {
         else{
             System.out.println("Enter valid name..");
         }
-        
-
         
     }
     
