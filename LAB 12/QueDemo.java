@@ -1,4 +1,5 @@
-import java.util.*;
+import java.util.scanner;
+//import java.util.*;
 import java.io.*;
 public class QueDemo{
     public static void main(String[] args) {
