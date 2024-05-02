@@ -20,7 +20,7 @@ public class Lab10_1 {
             
             String line = bufferedReader.readLine();
             
-            while ((line=line = bufferedReader.readLine()) != null) {
+            while ((line = bufferedReader.readLine()) != null) {
                 
                 lineCount++;
                 charCount += line.length();
