@@ -16,15 +16,17 @@ public class Lab10_1 {
             
             FileReader fileReader = new FileReader(f1);
             BufferedReader bufferedReader = new BufferedReader(fileReader);
+            //bufferReader bf = new BuffeReader(new FileReader(a12));
             
             String line = bufferedReader.readLine();
             
-            while (line != null) {
+            while ((line=line = bufferedReader.readLine()) != null) {
+                
                 lineCount++;
                 charCount += line.length();
                 String[] words = line.trim().split(" ");
                 wordCount += words.length;
-                line = bufferedReader.readLine();
+                
             }
             
             bufferedReader.close();
